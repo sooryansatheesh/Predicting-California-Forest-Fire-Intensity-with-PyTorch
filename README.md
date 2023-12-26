@@ -9,7 +9,7 @@ The Original Dataset from the Forest Fire Dataset of NASA  was processed for the
 The key fields in this dataset are : -
 
 
-<div class="columns" style="column-count: 2;">
+<div style="column-count: 2;">
 1.‘FID’- ID
 2.‘latitude’
 3.‘longitude’
