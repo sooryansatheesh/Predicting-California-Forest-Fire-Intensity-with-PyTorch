@@ -27,7 +27,7 @@ The key fields in this dataset are : -
 ## EDA and Feature Engineering
 
 EDA was carried out to understand the different fields of the dataset. There were no NaN values. Observed that two fields “‘FID’’ and “Unnamed: 0” were only datapoint numbers and not providing any relevant information. 
-The field “brightness” is providing a measure of brightness of the forest fire detected by the satellite sensor. This value can provide a measure of intensity of the fire with higher values representing larger fires. Using Pandas function “pd.cut” , categorization of the “brightness” field into 'brightness_category' with three categories. 
+The field “brightness” is providing a measure of brightness of the forest fire detected by the satellite sensor. This value can provide a measure of intensity of the fire with higher values representing larger fires. Using Pandas function “pd.cut” , categorization of the “brightness” field into 'brightness_category' with three categories was carried out. 
 
 “Date” feature was engineered to generate 'weekday',’week’ and ‘timestamp’ features. The latitude and longitude features were converted to “x”, “y” and “z” values.
 
@@ -40,3 +40,57 @@ The field “brightness” is providing a measure of brightness of the forest fi
 - Dataloading - Batch loading
 - Learning rate - 0.001
 - Model performance monitored in each batch and epoch. 
+
+<pre>
+
+class Multiclass(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.hidden = nn.Linear(input_size,25)
+        self.act = nn.ReLU()
+        self.output = nn.Linear(25, output_size)
+
+    def forward(self, x):
+        x = self.act(self.hidden(x))
+        x = self.output(x)
+        return x
+
+</pre>
+
+## Techniques Utilized
+
+- Exploratory Data Analysis
+- Feature Engineering 
+- Undersampling 
+- Feature Selection
+- L1/L2 Regularization
+- Drop Out 
+- Batch Normalization
+- Early Stopping 
+
+## Best Performance
+
+We were able to obtain the highest performance of 90%. 
+
+### Accuracy vs Epochs Plot
+
+![Accuracy vs Epochs Plot](images/L1L2_dropout_accuracy.png)
+
+### Cross-Entropy Loss vs Epochs Plot
+
+![Cross-Entropy Loss vs Epochs Plot](images/L1L2_dropout_crossentropyloss.png)
+
+### Confusion Matrix
+
+![Confusion Matrix](images/L1L2_dropout_confusionmatrix.png)
+
+## Acknowledgement
+
+* This research benefited from the support and services of UC Berkeley's Geospatial Innovation Facility (GIF), https://gif.berkeley.edu .
+
+* We acknowledge the use of data and/or imagery from NASA's Fire Information for Resource Management System (FIRMS) (https://earthdata.nasa.gov/firms), part of NASA's Earth Observing System Data and Information System (EOSDIS).
+
+* Code adpated partly from Tam,Adrian.(2023).Building a Multiclass Classification Model in PyTorch. https://machinelearningmastery.com/building-a-multiclass-classification-model-in-pytorch/ 
+
+
+
