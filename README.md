@@ -8,24 +8,21 @@
 The Original Dataset from the Forest Fire Dataset of NASA  was processed for the Final Project of INFO247 in Spring 2023. The processed dataset with 175k datapoints is used for this project. The dataset is further processed to suit the needs of this project.
 The key fields in this dataset are : -
 
+1. ‘FID’- ID
+2. ‘latitude’
+3. ‘longitude’
+4. ‘brightness’-brightness value
+5. ‘acq_time’-time the fire was detected
+6. ‘confidence’- statistical confidence in the fire detection
+7. ‘frp’ 
+8. ‘daynight’ -whether day or night
+9. ‘year’ - Year when the fire was detected
+10. ‘Month'-Month of Fire Detection
+11. ‘CALVEGZONE’-California Vegetation Zone
+12. ‘FORESTNAME’-National Forest Name
+13. ‘date’-Date of Fire Detection
+14. ‘county_name’-Name of the California County where the fire was detected
 
-<div style="column-count: 2;">
-1.‘FID’- ID
-2.‘latitude’
-3.‘longitude’
-4.‘brightness’-brightness value
-5.‘acq_time’-time the fire was detected
-6.‘confidence’- statistical confidence in the fire detection
-7.‘frp’ 
-8.‘daynight’ -whether day or night
-9.‘year’ - Year when the fire was detected
-10.‘Month'-Month of Fire Detection
-11.‘CALVEGZONE’-California Vegetation Zone
-12.‘FORESTNAME’-National Forest Name
-13.‘date’-Date of Fire Detection
-14.‘county_name’-Name of the California County where the fire was detected
-
-</div>
 
 ## EDA and Feature Engineering
 
