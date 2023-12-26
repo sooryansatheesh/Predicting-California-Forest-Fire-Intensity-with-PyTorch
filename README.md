@@ -33,10 +33,10 @@ The field “brightness” is providing a measure of brightness of the forest fi
 
 ## Base Model
 
-Framework - PyTorch
-Type-Multi-Class classification Feedforward Neural Network
-Loss function - CrossEntropy 
-Activation function- Adam
-Dataloading - Batch loading
-Learning rate - 0.001
-Model performance monitored in each batch and epoch. 
+- Framework - PyTorch
+- Type-Multi-Class classification Feedforward Neural Network
+- Loss function - CrossEntropy 
+- Activation function- Adam
+- Dataloading - Batch loading
+- Learning rate - 0.001
+- Model performance monitored in each batch and epoch. 
