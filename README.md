@@ -1,5 +1,5 @@
 # Predicting California Forest Fire Intensity with PyTorch
- Using PyTorch to predict forest fire intensity in California
+ Using PyTorch to predict forest fire intensity in California (INFO 299- Fall 2023- Professor John Chuang)
 
  In this project, the Forest Fire Dataset from NASA was utilised to examine if, using machine learning techniques, the intensity of forest fires can be predicted through classification using the different variables provided.
 
